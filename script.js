@@ -35,7 +35,7 @@ const alturaTriangulo= 5.5;
 console.log("La altura del triangulo es " + alturaTriangulo + " cm");
  */
 function perimetroTriangulo (lado1, lado2, base){
-    return lado1+lado2+base;
+    return (Number(lado1))+(Number(lado2))+(Number(base));
 }
 perimetroTriangulo();
 
@@ -44,7 +44,7 @@ perimetroTriangulo();
 function areaTriangulo (base, altura){
     return (base*altura)/2;
 } 
-areaTriangulo
+areaTriangulo();
 /* console.log("El area del triangulo es " + areaTriangulo + " cm^2");
  */
 console.groupEnd("Triangulos");
@@ -90,3 +90,57 @@ function areaCirculo(radio){
 /* console.log("El area del circulo es " + areaCirculo + " cm");
  */
 console.groupEnd("Circulos");
+
+//Aqui interactuamos con HTML
+//Cuadrado
+function calcularPerimetroCuadrado(){
+    const input = document.getElementById("InputCuadrado");
+    const value = input.value;
+
+    const perimetro = perimetroCuadrado(value);
+    alert (perimetro);
+}
+
+function calcularAreaCuadrado(){
+    const input = document.getElementById("InputCuadrado");
+    const value = input.value;
+
+    const area = areaCuadrada(value);
+    alert (area);
+}
+
+//Triangulo
+
+function calcularPerimetroTriangulo(){
+    const inputA = document.getElementById("InputTrianguloA");
+    const ladoA = inputA.value;
+
+    const inputB = document.getElementById("InputTrianguloB");
+    const ladoB = inputB.value;
+
+    const inputH = document.getElementById("InputTrianguloH");
+    const ladoH = inputH.value;
+
+    const inputBase = document.getElementById("InputTrianguloBase");
+    const ladoBase = inputBase.value;
+
+    const perimetroT = perimetroTriangulo (ladoA, ladoB, ladoBase);
+    alert (perimetroT);
+}
+
+function calcularAreaTriangulo(){
+    const inputA = document.getElementById("InputTrianguloA");
+    const ladoA = inputA.value;
+
+    const inputB = document.getElementById("InputTrianguloB");
+    const ladoB = inputB.value;
+
+    const inputH = document.getElementById("InputTrianguloH");
+    const ladoH = inputH.value;
+
+    const inputBase = document.getElementById("InputTrianguloBase");
+    const ladoBase = inputBase.value;
+
+    const areaT = areaTriangulo (ladoBase, ladoH);
+    alert (areaT);
+}
