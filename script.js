@@ -144,3 +144,29 @@ function calcularAreaTriangulo(){
     const areaT = areaTriangulo (ladoBase, ladoH);
     alert (areaT);
 }
+
+//Circulo
+
+function calcularAreaCirculo(){
+    const inputR = document.getElementById("InputCirculo")
+    const radioC = inputR.value;
+
+    const areaC = areaCirculo (radioC);
+    alert (areaC);
+}
+
+function calcularDiametroCirculo(){
+    const inputR = document.getElementById("InputCirculo")
+    const radioC = inputR.value;
+
+    const areaC = diametroCirculo (radioC);
+    alert (areaC);
+}
+
+function calcularPerimetroCirculo(){
+    const inputR = document.getElementById("InputCirculo")
+    const radioC = inputR.value;
+
+    const areaC = perimetroCirculo (radioC);
+    alert (areaC);
+}
