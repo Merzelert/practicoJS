@@ -30,7 +30,7 @@ console.groupEnd("Triangulos");
 console.group("Circulos");
 
 //Radio
- *///Diametro
+ ///Diametro
 
 function diametroCirculo(radio){
     return radio * 2;
